@@ -15,7 +15,7 @@
         }
         h1 {
             font-size: 52px;
-            color: green;
+            color: black;
         }
         .form-container {
             margin: 20px auto;
@@ -24,13 +24,22 @@
             padding: 20px;
             border-radius: 10px;
         }
-        .form-container input, .form-container textarea, .form-container button {
+        .form-container input, .form-container textarea {
+            width: calc(100% - 20px); /* Adjust width to fit inside the padding of the box */
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-container textarea {
+            resize: none; /* Disable resizing to fit neatly inside the box */
+        }
+        .form-container button {
             width: 100%;
             margin: 10px 0;
             padding: 10px;
             font-size: 16px;
-        }
-        .form-container button {
             cursor: pointer;
             background-color: green;
             color: white;
